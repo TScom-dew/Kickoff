@@ -1,0 +1,341 @@
+/* styling for my page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background: #f6f7f9;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  padding: 28px;
+  transition: all 0.35s, color 0.35s;
+  display: flex;
+  justify-content: center;
+}
+
+/* sDark Mode */
+body.dark-mode {
+  background: #0f1724;
+  color: #e6eef8;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 260px 1fr 320px;
+  grid-template-areas:
+    "header header header"
+    "menu main aside"
+    "footer footer footer";
+}
+
+/* Header */
+header {
+  grid-area: header;
+  background: linear-gradient(135deg, #0077b6, #0099cc);
+  color: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+body.dark-mode header {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+header .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+header h1 {
+  font-size: 28px;
+  letter-spacing: 0.2px;
+  margin-bottom: 6px;
+}
+header p {
+  opacity: 0.95;
+  margin-bottom: 8px;
+}
+.mode-btn {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  background: #fff;
+  color: #0077b6;
+  border: 0;
+  padding: 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s, background 0.2s, color 0.2s;
+}
+body.dark-mode .mode-btn {
+  /* background: #ffee32; */
+  background: #fff;
+  color: #0b1220;
+}
+.mode-btn:active {
+  transform: scale(0.98);
+}
+
+header .nav {
+  margin-top: 12px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+header .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  opacity: 0.95;
+}
+header .nav a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Hero inside header */
+.hero {
+  margin-top: 16px;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 18px;
+  border-radius: 10px;
+}
+.hero h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.hero p {
+  color: #f2f7fb;
+  opacity: 0.95;
+}
+
+/* Menu (left) */
+nav.menu {
+  grid-area: menu;
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s, color 0.3s;
+}
+body.dark-mode nav.menu {
+  background: #0b1220;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+nav.menu h3 {
+  margin-bottom: 10px;
+}
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+nav.menu a {
+  text-decoration: none;
+  color: #0077b6;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.2s;
+}
+body.dark-mode nav.menu a {
+  color: #00b4d8;
+}
+nav.menu a:hover {
+  background: #0077b6;
+  color: #fff;
+}
+body.dark-mode nav.menu a:hover {
+  background: #00b4d8;
+  color: #0b1220;
+}
+
+/* Main content */
+main {
+  grid-area: main;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s, color 0.3s;
+}
+body.dark-mode main {
+  background: #0b1220;
+  color: #e6eef8;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+.section {
+  margin-bottom: 22px;
+}
+h2.section-title {
+  color: #0077b6;
+  margin-bottom: 12px;
+}
+body.dark-mode h2.section-title {
+  color: #00b4d8;
+}
+.lead {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+body.dark-mode .lead {
+  color: #9aa7bd;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.02)
+  );
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.card p {
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* Aside / facts */
+aside {
+  grid-area: aside;
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s, color 0.3s;
+}
+body.dark-mode aside {
+  background: #0b1220;
+  color: #e6eef8;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+aside h3 {
+  color: #0077b6;
+  margin-bottom: 12px;
+}
+body.dark-mode aside h3 {
+  color: #00b4d8;
+}
+aside ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+.fact-badge {
+  display: inline-block;
+  background: #0077b6;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+body.dark-mode .fact-badge {
+  background: #00b4d8;
+  color: #0b1220;
+}
+
+/* Map embed */
+.map-wrap iframe {
+  width: 100%;
+  border: 0;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: transparent;
+  color: #222;
+}
+body.dark-mode .contact input,
+body.dark-mode .contact textarea {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e6eef8;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #0077b6;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+body.dark-mode .btn {
+  background: #00b4d8;
+  color: #0b1220;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 12px 0px 100px 0px;
+  border-radius: 8px;
+  background: #0077b6;
+  color: #fff;
+}
+body.dark-mode footer {
+  color: #9aa7bd;
+}
+
+/* Responsive */
+@media (max-width: 1050px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "menu"
+      "main"
+      "aside"
+      "footer";
+  }
+  nav.menu {
+    order: 2;
+  }
+}
