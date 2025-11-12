@@ -79,7 +79,7 @@ header p {
   color: #0077b6;
   border: 0;
   padding: 6px;
-  border-radius: 999px;
+  border-radius: 100%;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
@@ -131,10 +131,13 @@ header .nav a:hover {
 .hero .lead
 
 /* Menu (left) */
+.container .menu {
+  background: #fff;
+}
 nav.menu {
   grid-area: menu;
   background: #fff;
-  padding: 18px;
+  padding: 22px;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s, color 0.3s;
@@ -198,7 +201,6 @@ body.dark-mode h2.section-title {
   color: #00b4d8;
 }
 .lead {
-  /* background: #00b4d8; */
   color: #6b7280;
   margin-bottom: 12px;
 }
@@ -335,17 +337,104 @@ body.dark-mode .btn {
   text-align: center;
   padding: 25px;
   border-radius: 8px;
-  background: #0077b6;
+  background: #1a3543b4;
   color: #ffffff;
 }
 body.dark-mode .footer {
   color: #f1f9fa;
 }
-.footer small #email {
-  color: white;
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: wrap;
+  gap: 30px;
+  /* max-width: 500px; */
+}
+.footer-about,
+.footer-links,
+.footer-social {
+  max-width: 500px;
+  text-align: left;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  /* color: #ccc; */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  /* color: blueviolet; */
+  color: #f1f9fa;
+  font-size: 14px;
+  display: block;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: lightsalmon;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  /* color: blueviolet; */
+  font-size: 25px;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  color: lightsalmon;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #fff;
 }
 
 /* Responsive */
+@media (max-width: 1050px) {
+  header {
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  header .brand img {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "menu"
+      "main"
+      "aside"
+      "footer";
+    width: 100%;
+    /* max-width: 1200px; */
+  }
+
+  nav.menu {
+    order: 2;
+  }
+}
 @media (max-width: 550px) {
   body {
     padding: 15px;
@@ -360,9 +449,12 @@ body.dark-mode .footer {
     display: none;
   }
   header h1 {
+    text-align: left;
     font-size: 30px;
     letter-spacing: 0.2px;
     margin-bottom: 6px;
+    /* padding-left: 2rem; */
+    /* background-color: #0f1724; */
   }
 
   header .nav {
