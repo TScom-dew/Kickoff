@@ -458,17 +458,12 @@ body.dark-mode .footer {
   }
 .mode-btn {
   position: absolute;
-  right: 17.5px;
-  top: 18px;
+  right: 15px;
+  top: 18.5px;
   background: #fff;
   color: #0077b6;
   border: 0;
   padding: 5px;
-  border-radius: 100%;
-  font-weight: 500;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s, background 0.2s, color 0.2s;
 }
   header .nav {
     margin-top: 12px;
@@ -497,4 +492,5 @@ body.dark-mode .footer {
     order: 2;
   }
 }
+
 
