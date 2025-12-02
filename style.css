@@ -445,9 +445,9 @@ body.dark-mode .footer {
     padding: 20px;
   }
 
-  header .brand img {
+  /* header .brand img {
     display: none;
-  }
+  } */
   header h1 {
     text-align: left;
     font-size: 30px;
@@ -456,7 +456,20 @@ body.dark-mode .footer {
     /* padding-left: 2rem; */
     /* background-color: #0f1724; */
   }
-
+.mode-btn {
+  position: absolute;
+  right: 17.5px;
+  top: 18px;
+  background: #fff;
+  color: #0077b6;
+  border: 0;
+  padding: 5px;
+  border-radius: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s, background 0.2s, color 0.2s;
+}
   header .nav {
     margin-top: 12px;
     display: flex;
@@ -484,3 +497,4 @@ body.dark-mode .footer {
     order: 2;
   }
 }
+
