@@ -18,7 +18,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const $ = id => document.getElementById(id); // DOM helper
 
-  const btn = $("#modeToggle");
+  const btn = $("modeToggle");
   const mode = localStorage.getItem("site-current-mode");
 
   if (mode === "dark") {
@@ -37,4 +37,5 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("site-current-mode", on ? "dark" : "light");
   });
 });
+
 
