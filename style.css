@@ -84,7 +84,7 @@ header h1 {
   letter-spacing: 0.2px;
   margin-bottom: 6px;
 }
-header p {
+header span {
   opacity: 0.95;
   margin-bottom: 8px;
 }
@@ -197,6 +197,9 @@ h2.section-title {
 }
 body.dark-mode h2.section-title {
   color: #00b4d8;
+}
+main span{
+  width: 100%;
 }
 .lead {
   color: #6b7280;
