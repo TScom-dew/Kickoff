@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
-  padding: 10px;
+  padding: 28px;
   transition: all 0.35s, color 0.35s;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ header {
   background: linear-gradient(135deg, #0077b6, #0099cc);
   color: #fff;
   border-radius: 12px;
-  padding: 20px;
+  padding: 28px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   position: relative;
   overflow: hidden;
@@ -134,7 +134,7 @@ header .nav a:hover {
 nav.menu {
   grid-area: menu;
   background: #fff;
-  padding: 20px;
+  padding: 22px;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s, color 0.3s;
@@ -177,7 +177,7 @@ body.dark-mode nav.menu a:hover {
 main {
   grid-area: main;
   background: #fff;
-  padding: 20px;
+  padding: 22px;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in alternate;
@@ -439,7 +439,7 @@ body.dark-mode .footer {
 /* for large devices */
 @media (max-width: 1050px) {
   header {
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 20px;
   }
 
@@ -464,7 +464,7 @@ body.dark-mode .footer {
 /* for small devices */
 @media (max-width: 550px) {
   body {
-    padding: 0px;
+    padding: 15px;
   }
 
   header {
@@ -514,7 +514,6 @@ body.dark-mode .footer {
     order: 2;
   }
 }
-
 
 
 
