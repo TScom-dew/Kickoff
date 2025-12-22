@@ -30,10 +30,10 @@ body.dark-mode {
 /* Container */
 .container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   display: grid;
   gap: 20px;
-  grid-template-columns: 280px 1.5fr 320px;
+  grid-template-columns: 260px 1.5fr 320px;
   grid-template-areas:
     "header header header"
     "menu main aside"
@@ -226,7 +226,7 @@ body.dark-mode .lead {
 }
 .card img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   display: block;
   border-radius: 10px;
@@ -442,7 +442,10 @@ body.dark-mode .footer {
     border-radius: 12px;
     padding: 20px;
   }
-  
+
+  header .brand img {
+    display: none;
+  }
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -511,7 +514,6 @@ body.dark-mode .footer {
     order: 2;
   }
 }
-
 
 
 
