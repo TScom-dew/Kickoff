@@ -21,8 +21,8 @@
     <link rel="canonical" href="https://kickoff-smoky.vercel.app/" />
     <title>Hazaribagh — Town Guide</title>
     <link rel="icon"  href="townguideicon.png"/>
-    <link rel="preload" href="/style.css" as="style">
-    <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="preload" href="/style.css" as="style"> -->
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -104,22 +104,22 @@
             <!-- Real-photo sources recommended: see citations below -->
             <div class="card">
               <img
-                src="hazaribagh-national-park.jpeg"
+                src="hazaribagh-national-park.webp"
                 alt="Hazaribagh National Park"
                 loading="lazy"
               />
               <p>Hazaribagh Wildlife Sanctuary / National Park</p>
             </div>
             <div class="card">
-              <img src="India_Tiger_cubs.jpg" alt="Wildlife" loading="lazy" />
+              <img src="India_Tiger_cubs.webp" alt="Wildlife" loading="lazy" />
               <p>Wildlife & Safari</p>
             </div>
             <div class="card">
-              <img src="tilaiya-dam.jpg" alt="Tilaiya Dam" loading="lazy" />
+              <img src="tilaiya-dam.webp" alt="Tilaiya Dam" loading="lazy" />
               <p>Tilaiya Dam (Tilaiya Reservoir)</p>
             </div>
             <div class="card">
-              <img src="peacock.jpg" alt="Peacock" loading="lazy" />
+              <img src="peacock.webp" alt="Peacock" loading="lazy" />
               <p>Peafowl and park life</p>
             </div>
           </div>
@@ -145,10 +145,10 @@
         <section id="contact" class="section contact">
           <h2 class="section-title">Contact / Feedback</h2>
           <form class="contact-form" id="form-submit">
-            <input type="text" placeholder="Your name" required />
-            <input type="email" placeholder="Your email" required />
+            <input type="text" placeholder="Your name" title="Your name" required />
+            <input type="email" placeholder="Your email" title="Your name" required />
             <textarea placeholder="Your message" rows="4"></textarea>
-            <button class="btn" id="submit-button" type="submit">Send Message</button>
+            <button class="btn" id="submit-button" type="submit" title="submit">Send Message</button>
           </form>
         </section>
       </main>
@@ -261,8 +261,5 @@
     <script src="index.js"></script>
   </body>
 </html>
-
-
-
 
 
