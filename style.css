@@ -59,8 +59,8 @@ body.dark-mode header {
 
 .mode-btn {
   position: absolute;
-  right: 18px;
-  top: 18px;
+  right: 19px;
+  top: 19px;
   background: #fff;
   color: #0077b6;
   border: none;
@@ -118,7 +118,8 @@ header .nav a:hover {
   font-size: 22px;
   margin-bottom: 8px;
 }
-.hero p {
+.hero span {
+  /* width: 100%; */
   color: #f2fafb;
   opacity: 0.95;
   background-color: transparent;
