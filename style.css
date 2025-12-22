@@ -30,10 +30,10 @@ body.dark-mode {
 /* Container */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   display: grid;
   gap: 20px;
-  grid-template-columns: 260px 1.5fr 320px;
+  grid-template-columns: 280px 1.8fr 340px;
   grid-template-areas:
     "header header header"
     "menu main aside"
