@@ -256,14 +256,19 @@
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2025 Hazaribagh City Guide </p>
+          <p>&copy; <span id="year"></span> Hazaribagh Guide. All Rights Reserved.</p>
         </div>
+
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
       </footer>
     </div>
 
     <script src="index.js" defer></script>
   </body>
 </html>
+
 
 
 
