@@ -15,7 +15,7 @@ This project showcases local attractions, wildlife, dams, and city information i
 
 - 🌙 Dark Mode Toggle (Saved in Local Storage)
 - 📱 Fully Responsive Design
-- 🖼 Image Gallery with Lazy Loading
+- 🖼 Image Gallery 
 - 🗺 Google Maps Embed
 - 📩 Contact / Feedback Form
 - 📖 FAQ Section
@@ -35,6 +35,7 @@ This project showcases local attractions, wildlife, dams, and city information i
 
 ## 📂 Project Structure
 
+```
 ├── index.html
 ├── style.css
 ├── index.js
@@ -46,7 +47,7 @@ This project showcases local attractions, wildlife, dams, and city information i
 ├── peacock.webp
 ├── townguideicon.webp
 └── README.md
-
+```
 
 ---
 
