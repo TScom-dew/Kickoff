@@ -254,6 +254,7 @@ body.dark-mode .lead {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 }
 .contact input,
 .contact textarea {
@@ -263,11 +264,36 @@ body.dark-mode .lead {
   background: transparent;
   color: #181818;
 }
+
+input:focus, textarea:focus{
+  outline: 2px solid rgba(25, 25, 118, 0.958);
+  border-color: transparent;
+}
 body.dark-mode .contact input,
 body.dark-mode .contact textarea {
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #e6eef8;
 }
+
+#my-form-status {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(-25px);
+  /* transform: translateY(5px); */
+  transition: 0.4s ease;
+  position: absolute;
+  bottom: -1.5em;
+  left: calc(8vw + 5%);
+  width: 100%;
+}
+
+#my-form-status.show {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
 .btn {
   display: inline-block;
   padding: 10px 14px;
@@ -285,6 +311,12 @@ body.dark-mode .btn {
 .btn:hover {
   background: #005f87;
 }
+
+
+#submit-button{
+  cursor: pointer;
+}
+
 
 /* Aside / facts */
 aside {
