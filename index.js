@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const $ = id => document.getElementById(id); // DOM helper
 
   
-  const formSubmit = $("form-submit");
-  // const submitBtn = $("submit-button");
   const btn = $("modeToggle");
   const mode = localStorage.getItem("site-current-mode");
 
@@ -24,11 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("site-current-mode", on ? "dark" : "light");
   });
 
-  formSubmit.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert("Thank you for your feedback!");
-    formSubmit.reset();
-  });
+  
 });
 
 
