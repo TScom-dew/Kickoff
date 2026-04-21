@@ -39,7 +39,7 @@ This project showcases local attractions, wildlife, dams, and city information i
 ├── index.html
 ├── style.css
 ├── index.js
-├── faq-schema.js
+├── contact.js
 │
 ├── hazaribagh-national-park.webp
 ├── tilaiya-dam.webp
