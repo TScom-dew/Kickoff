@@ -22,11 +22,15 @@
     <link rel="canonical" href="https://hazaribagh-guide.vercel.app/" />
     <title>Hazaribagh — Town Guide</title>
     <link rel="icon"  href="townguideicon.webp"/>
-    <link rel="preload" href="/style.css" as="style">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 
     
-   
+    <!-- FAQ Schema -->
+    <script src="faq-schema.js" defer></script>
+    
+    <!-- <link  rel="preload"  href="/assets/fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin > -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -108,22 +112,22 @@
             <!-- Real-photo sources recommended: see citations below -->
             <div class="card">
               <img
-                src="hazaribagh-national-park.webp"
+                src="image/hazaribagh-national-park.webp"
                 alt="Hazaribagh National Park"
                 loading="lazy"
               />
               <p>Hazaribagh Wildlife Sanctuary / National Park</p>
             </div>
             <div class="card">
-              <img src="India_Tiger_cubs.webp" alt="Wildlife" loading="lazy" />
+              <img src="image/India_Tiger_cubs.webp" alt="Wildlife" loading="lazy" />
               <p>Wildlife & Safari</p>
             </div>
             <div class="card">
-              <img src="tilaiya-dam.webp" alt="Tilaiya Dam" loading="lazy" />
+              <img src="image/tilaiya-dam.webp" alt="Tilaiya Dam" loading="lazy" />
               <p>Tilaiya Dam (Tilaiya Reservoir)</p>
             </div>
             <div class="card">
-              <img src="peacock.webp" alt="Peacock" loading="lazy" />
+              <img src="image/peacock.webp" alt="Peacock" loading="lazy" />
               <p>Peafowl and park life</p>
             </div>
           </div>
@@ -146,12 +150,22 @@
           </div>
         </section>
           <!-- feedback part -->
-        <section id="contact" class="section contact">
+        <section id="contact-form" class="section contact">
           <h2 class="section-title">Contact / Feedback</h2>
-          <form class="contact-form" id="form-submit">
+          <form class="contact" id="contact"  action="https://formspree.io/f/mkokvweb" method="post">
+
+            <input type="text" name="_gotcha" style="display:none">
+
             <input type="text" id="name" name="name" placeholder="Your name" title="Your name" autocomplete="on" required />
+
             <input type="email" id="email" name="email" placeholder="Your email" title="Your email" autocomplete="on" required />
             <textarea id="massage" name="massage" title="Your message" placeholder="Your message" rows="4" required></textarea>
+
+            <!-- submission time -->
+            <input type="hidden" name="time" id="time">
+            <!-- success/error message -->
+            <p id="my-form-status"></p>
+
             <button class="btn" id="submit-button" name="submit-button" type="submit" title="submit">Send Message</button>
           </form>
         </section>
@@ -214,26 +228,47 @@
               <li><a href="#">Home</a></li>
               <li>
                 <a
-                  href="--don't use without permission-- https://www.tripadvisor.in/Attractions-g2287426-Activities-Hazaribagh_Hazaribagh_District_Jharkhand.html"
+                  href="#"
                   target="_blank"
                   >Top Places</a
                 >
               </li>
               <li>
                 <a
-                  href="--don't use without permission-- https://www.tripadvisor.in/Restaurants-g2287426-Hazaribagh_Hazaribagh_District_Jharkhand.html"
+                  href="#"
                   target="_blank"
                   >Restaurants</a
                 >
               </li>
               <li>
                 <a
-                  href="--don't use without permission-- https://www.tripadvisor.in/Hotels-g2287426-Hazaribagh_Hazaribagh_District_Jharkhand-Hotels.html"
+                  href="#"
                   target="_blank"
                   >Hotels</a
                 >
               </li>
-              <!-- <li><a href="">Contact Us</a></li> -->
+              <li>
+                <a href="#contact-form">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="footer-links">
+            <h4>Projects</h4>
+            <ul>
+              <li>
+                <a href="https://hazaribagh-guide.vercel.app/" target="_blank">Hazaribagh — Town Guide</a>
+              </li>
+              <li>
+                <a href="https://atmsimulatorsystem.vercel.app/" target="_blank">ATM Simulator System</a>
+              </li>
+              <li>
+                <a href="https://forexlyglobal.vercel.app/" target="_blank">Currency Convertor</a>
+              </li>
+              <li>
+                <a href="https://my-portfolio-dun-one-65.vercel.app/" target="_blank">My Portfolio - Ashlok Kumar</a>
+              </li>
             </ul>
           </div>
 
@@ -273,19 +308,11 @@
 
 
 
+
+
+
+
+
 <!--  END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
