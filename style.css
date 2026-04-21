@@ -277,21 +277,34 @@ body.dark-mode .contact textarea {
 
 #my-form-status {
   font-size: 1rem;
+  line-height: 1.1rem;
   font-weight: bolder;
   margin-top: 1rem;
   opacity: 0;
   transform: translateY(-25px);
-  /* transform: translateY(5px); */
   transition: 0.4s ease;
   position: absolute;
   bottom: -1.5em;
   left: calc(8vw + 5%);
-  width: 100%;
+  width: 95%;
 }
 
 #my-form-status.show {
   opacity: 1;
-  transform: translateY(5px);
+  transform: translateY(1.2rem);
+}
+
+@media (max-width:500px) {
+  #my-form-status {
+    bottom: -1.5em;
+    left: calc(5vw + 5%);
+    width: 90%;
+
+    font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  }
 }
 
 .btn {
@@ -553,3 +566,4 @@ body.dark-mode .footer {
 
 
 
+/*  END */
