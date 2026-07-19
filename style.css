@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
 body {
   scroll-behavior: smooth;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
@@ -18,8 +23,7 @@ body {
   transition: all 0.35s, color 0.35s;
   display: flex;
   justify-content: center;
-  
-}
+ }
 
 /* Dark Mode */
 body.dark-mode {
